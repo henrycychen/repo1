@@ -2,5 +2,6 @@
 <project name="PhingSample" default="prod">
     <target name="test">
         <echo msg="this test is working" />
+        <echo>From commandline: ${CommitID} </echo>
     </target>
 </project>
