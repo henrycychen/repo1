@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="PhingSample" default="prod">
+    <target name="test">
+        <echo msg="this test is working" />
+    </target>
+</project>
