@@ -4,4 +4,8 @@
         <echo msg="this test is working" />
         <echo>From commandline: ${Commit} </echo>
     </target>
+
+    <target name="test2">
+        <echo msg="this test2 is working" />
+    </target>
 </project>
