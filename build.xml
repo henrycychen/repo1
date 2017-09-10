@@ -8,4 +8,8 @@
     <target name="test2">
         <echo msg="this test2 is working" />
     </target>
+
+    <target name="test3">
+        <echo msg="this test3 is working" />
+    </target>
 </project>
