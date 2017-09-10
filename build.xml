@@ -12,4 +12,8 @@
     <target name="test3">
         <echo msg="this test3 is working" />
     </target>
+
+    <target name="test4">
+        <echo msg="this test4 is working" />
+    </target>
 </project>
