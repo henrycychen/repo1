@@ -3,13 +3,10 @@
     <target name="test">
         <echo msg="this test is working" />
         <if>
-            <isset property="CommitID" />
+            <equals arg1="${Commit}" arg2="" />
             <then>
-                <property name="Commit" value="${Commit}" />
+                <property name="${Commit}" value="master" />
             </then>
-            <else>
-                <property name="Commit" value="master" />
-            </else>
         </if>
         <echo>From commandline: ${Commit} </echo>
     </target>
