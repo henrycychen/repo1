@@ -2,6 +2,15 @@
 <project name="PhingSample" default="prod">
     <target name="test">
         <echo msg="this test is working" />
+        <if>
+            <isset property="CommitID" />
+            <then>
+                <property name="Commit" value="${Commit}" />
+            </then>
+            <else>
+                <property name="Commit" value="master" />
+            </else>
+        </if>
         <echo>From commandline: ${Commit} </echo>
     </target>
 
