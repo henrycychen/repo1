@@ -3,10 +3,9 @@
     <target name="test">
         <echo msg="this test is working" />
         <if>
-            <equals arg1="${Commit}" arg2="" />
+            <equals arg1="Commit" arg2="" />
             <then>
-                <property name="${Commit}" value="master" />
-                <echo>From commandline: ${Commit} </echo>
+                <property name="Commit" value="master" />
             </then>
         </if>
         <echo>From commandline: ${Commit} </echo>
