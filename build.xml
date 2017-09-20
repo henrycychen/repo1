@@ -6,6 +6,7 @@
             <equals arg1="${Commit}" arg2="" />
             <then>
                 <property name="${Commit}" value="master" />
+                <echo>From commandline: ${Commit} </echo>
             </then>
         </if>
         <echo>From commandline: ${Commit} </echo>
