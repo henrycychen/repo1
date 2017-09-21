@@ -5,12 +5,12 @@
         <property name="Commit" value="" />
         <property name="CommitCheck" value="" />
         <if>
-            <equals arg1="${Commit}" arg2="${CommitCheck}" />
+            <isset property="Commit" />
             <then>
-                <echo message="The two strings are the same. Git will pull from master" />
+                <echo>From commandline: ${Commit} </echo>
             </then>
             <else>
-                <echo>From commandline: ${Commit} </echo>
+                <echo>From commandline: master </echo>
             </else>
         </if>
     </target>
