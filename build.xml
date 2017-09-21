@@ -2,15 +2,16 @@
 <project name="PhingSample" default="prod">
     <target name="test">
         <echo msg="this test is working" />
-        <property name="Commit" value="" />
-        <property name="CommitCheck" value="" />
+        <property name="text1" value="text" />
+        <property name="text2" value="text" />
+
         <if>
-            <equals arg1="${Commit}" arg2="${CommitCheck}" />
+            <equals arg1="${text1}" arg2="${text2}" />
             <then>
-                <property name="Commit" value="master" />
-                <echo>From commandline: ${Commit} </echo>
+                <echo message="The two strings are the same." />
             </then>
         </if>
+        <echo>From commandline: ${Commit} </echo>
     </target>
 
     <target name="test2">
