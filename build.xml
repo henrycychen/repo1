@@ -2,8 +2,6 @@
 <project name="PhingSample" default="prod">
     <target name="test">
         <echo msg="this test is working" />
-        <property name="Commit" value="" />
-        <property name="CommitCheck" value="" />
         <if>
             <isset property="Commit" />
             <then>
