@@ -2,12 +2,13 @@
 <project name="PhingSample" default="prod">
     <target name="test">
         <echo msg="this test is working" />
-        <echo>From commandline: ${Commit} </echo>
+        <property name="Commit" value="${Commit}" />
+        <property name="CommitCheck" value="" />
         <if>
-            <equals arg1="Commit" arg2="" />
-                <then>
-                    <property name="Commit" value="master" />
-                </then>
+            <equals arg1="${Commit}" arg2="${CommitCheck}" />
+            <then>
+                <property name="Commit" value="master" />
+            </then>
         </if>
         <echo>From commandline: ${Commit} </echo>
     </target>
