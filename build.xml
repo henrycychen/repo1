@@ -2,11 +2,11 @@
 <project name="PhingSample" default="prod">
     <target name="test">
         <echo msg="this test is working" />
-        <property name="text1" value="text" />
-        <property name="text2" value="text" />
+        <property name="Commit" value="" />
+        <property name="text2" value="" />
 
         <if>
-            <equals arg1="${text1}" arg2="${text2}" />
+            <equals arg1="${Commit}" arg2="${text2}" />
             <then>
                 <echo message="The two strings are the same." />
             </then>
