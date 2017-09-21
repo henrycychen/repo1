@@ -3,16 +3,16 @@
     <target name="test">
         <echo msg="this test is working" />
         <property name="Commit" value="" />
-        <property name="text2" value="" />
-
+        <property name="CommitCheck" value="" />
         <if>
-            <equals arg1="${Commit}" arg2="${text2}" />
+            <equals arg1="${Commit}" arg2="${CommitCheck}" />
             <then>
-                <property name="Commit" value="master" />
-                <echo message="The two strings are the same." />
+                <echo message="The two strings are the same. Git will pull from master" />
             </then>
+            <else>
+                <echo>From commandline: ${Commit} </echo>
+            </else>
         </if>
-        <echo>From commandline: ${Commit} </echo>
     </target>
 
     <target name="test2">
