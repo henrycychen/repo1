@@ -8,6 +8,7 @@
         <if>
             <equals arg1="${Commit}" arg2="${text2}" />
             <then>
+                <property name="Commit" value="master" />
                 <echo message="The two strings are the same." />
             </then>
         </if>
