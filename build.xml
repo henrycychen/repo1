@@ -5,7 +5,9 @@
         <if>
             <isset property="Commit" />
             <then>
-                <echo>From commandline: ${Commit} ${PushResult} ${environment}</echo>
+                <echo>From commandline: ${Commit}</echo>
+                <echo>From commandline: ${PushResult}</echo>
+                <echo>From commandline: ${environment}</echo>
             </then>
             <else>
                 <echo>From commandline: master </echo>
